@@ -1,0 +1,42 @@
+@use '../utils/variables' as vars;
+@use '../utils/mixins' as mixins;
+
+.services{
+   
+   .card-services-container{
+      display: grid;  
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      gap:1rem;
+       max-width: 90rem;
+      margin-top: 2rem;
+   }
+   
+   .card-services{
+      padding: 2rem;
+      text-align: center;
+      border-radius: .5rem;
+      background-color: vars.$secondary-color;
+      transition: all .2s ease-in-out;
+      &:hover{
+         box-shadow:0 .3rem .4rem vars.$third-color;
+         transform: scaleY(1.05);
+      }
+      &-img{
+         width: 3rem;
+         height: 3rem;
+         margin: auto;
+         padding: .3rem;
+         border-radius: 50%;
+         background-color: vars.$blue-dark;
+      }
+      &-title{
+         margin: 1rem 0;
+         font-size: 2rem;
+      }
+      &-text{
+         font-weight: vars.$thin;
+         font-weight: 1.5rem;
+         line-height: 1.5;
+      }
+   }
+}

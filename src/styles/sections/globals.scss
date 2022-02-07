@@ -1,0 +1,137 @@
+@use '../utils/variables'as vars;
+@use '../utils/mixins'as mixins;
+
+// ---------------------TAGS STYLES
+::-webkit-scrollbar {
+   width: 0.7rem;
+   background-color: vars.$primary-color;
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 0.5rem;
+   background: vars.$blue-dark;
+}
+
+html {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+body {
+   padding-top: 8rem;
+   font-family: vars.$font-nunito;
+   background-color: vars.$primary-color;
+   color: vars.$white;
+
+   @include mixins.small {
+      padding-top: 6rem;
+   }
+}
+
+@each $name,
+$value in vars.$titles-sizes {
+   #{$name} {
+      font-size: $value;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+}
+
+figure {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   color: vars.$white;
+   text-decoration: none;
+}
+
+blockquote{
+   margin: 0;
+}
+section{
+   margin-top: 2rem;
+}
+// --------------------GLOBAL STYLES
+.container {
+   width: 90%;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.page-title {
+   font-size: 2rem;
+   span {
+      text-transform: uppercase;
+      color: vars.$blue-dark;
+   }
+}
+
+.sections {
+   // width: 90%;
+   max-width: 1400px;
+   margin: auto;
+   padding: 2rem 0;
+   &-title {
+      text-align: center;
+      text-transform: uppercase;
+      max-width: 35rem;
+      font-weight: vars.$black;
+      line-height: 1.5;
+      span {
+         color: vars.$blue-dark;
+      }
+   }
+}
+
+.contact-us-btn, .check-out-btn{
+   display: block;
+   width: 50%;
+   max-width: 15rem;
+   margin: 1.5rem auto 0;
+   padding: .8rem 1rem;
+   text-align: center;
+   font-weight: vars.$bold;
+   background-color: vars.$third-color;
+   border-radius: .3rem;
+   transition: all .3s ease-in-out;
+
+   &:hover{
+      background-color: vars.$blue-light;
+      color: vars.$white;
+   }
+}
+
+.link-important {
+   color: vars.$white;
+   border: .1rem solid vars.$white;
+   border-radius: .5rem;
+}

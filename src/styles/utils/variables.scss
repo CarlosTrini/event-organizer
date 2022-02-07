@@ -1,0 +1,45 @@
+//-----------------FONTS
+$font-nunito: 'Nunito', sans-serif; // 300, 300-italic, 400, 700, 900;
+
+$thin: 300;
+$thin-italic: italic;
+$regular: 400; 
+$bold: 700;
+$black: 900;
+
+
+$titles-sizes:(
+   'h1': 38px,
+   'h2' : 35px,
+   'h3': 28px,
+   'h4': 21px
+);
+
+// -------------------------------------COLORS
+
+$primary-color:#222;
+$secondary-color:#333;
+$third-color:#666;
+$blue-dark:#3b1bc9;
+$blue-light:#7154f3;
+$white:#fff2f2;
+$dark:#000000;
+
+
+// ------------------------------BREAKPOINTS
+$breakpoints-screen:(
+   xs:380px, //small
+   sm: 576px, //phone
+   md: 768px, //tablet
+   lg: 992px, //laptop
+   xl: 1200px, //desktop
+   xxl: 1400px //desktop-lg
+);
+
+// ------------------------ IMAGE SIZE
+$images-sizes: (
+   'sm': 4rem,
+   'md': 10rem,
+   'lg': 15rem,
+   'xl': 20rem
+);

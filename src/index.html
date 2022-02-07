@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Si deseas hacer una reservacion con nosotros puedes llamarnos para cualquier eventos... Revisa nuestros precios, y contactanos"/>
+  <meta name="keywords" content="eventos cdmx, organizadores de eventos, eventos para bodas, eventos para fiestas, ¿como organizar un evento?"/>
+  <meta name="author" content="Autor" />
+<meta name="copyright" content="" />
+<meta name="robots" content="index"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;0,900;1,300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>Organizador de eventos</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="page-title nav-title">
+        <a href="#"> <span>e</span>vent<span>o</span>rganizers </a>
+      </h1>
+      <div class="menu-responsive-icons" id="menuResponsive">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="active">home</a></li>
+        <li><a href="#service">service</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#price">price</a></li>
+        <li><a href="#review">review</a></li>
+        <li class="link-important"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION  -->
+  <section class="sections hero">
+    <h2 class="sections-title container">
+      Its time to celebrate! the best <span>event organizers</span>
+    </h2>
+    <a href="#contact" class="contact-us-btn">Contact us</a>
+
+    <div class="swiper-container home-slider">
+      <div class="swiper-wrapper">
+        <figure class="swiper-slide">
+          <img src="./images/slide-1.jpg" alt="ilustration" />
+        </figure>
+        <figure class="swiper-slide">
+          <img src="./images/slide-2.jpg" alt="ilustration" />
+        </figure>
+        <figure class="swiper-slide">
+          <img src="./images/slide-3.jpg" alt="ilustration" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION  -->
+  <section class="sections services" id="service">
+    <h2 class="sections-title container">our <span>services</span></h2>
+
+    <div class="card-services-container container" id="servicesContainer">
+      <template id="templateServices">
+        <!--TEMPLATE-->
+        <div class="card-services">
+          <figure class="card-services-img">
+            <img src="" alt="" id="serviceImage">
+          </figure>
+          <h3 class="card-services-title" id="serviceTitle"></h3>
+          <p class="card-services-text" id="serviceText"></p>
+      </template>
+      <!--TEMPLATE-->
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ABOOUT US SECTION -->
+  <section class="sections about " id="about">
+    <h2 class="sections-title container"><span>about</span> us</h2>
+
+    <div class="about-container container">
+      <figure class="about-img">
+        <img src="./images/about-img.jpg" alt="about us image">
+      </figure>
+      <div class="about-details">
+        <h3 class="about-title">we will give a very special celebration for you</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam labore fugiat ut esse perferendis perspiciatis
+          provident dolores fuga in facilis culpa possimus, quia praesentium itaque, sapiente quasi harum rem
+          asperiores.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat vero expedita incidunt provident quibusdam
+          aut odit, numquam nesciunt similique nisi.</p>
+        <a href="#contact" class="contact-us-btn">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY SECTION -->
+  <section class="sections gallery " id="gallery">
+    <h2 class="sections-title container">our <span>gallery</span></h2>
+
+    <div class="gallery-container container" id="galleryContainer">
+      <template id="templateGallery">
+        <div class="gallery-details">
+          <h3 class="gallery-title">photos and events</h3>
+          <figure class="gallery-img">
+            <img src="" alt="" id="galleryImage">
+          </figure>
+          <div class="gallery-icons">
+            <img src="./images/zoom.svg" alt="zoom image">
+            <img src="./images/share.svg" alt="share image">
+            <img src="./images/heart.svg" alt="heart image">
+          </div>
+        </div>
+      </template>
+    </div>
+  </section>
+    <!-- PRICE SECTION -->
+    <section class="sections price" id="price">
+      <h2 class="sections-title container"><span>our</span> price</h2>
+
+      <div class="card-price-container container" id="pricesContainer">
+        <template id="templatePrice">
+          <div class="card-price">
+            <h3 class="card-price-title" id="priceTitle"></h3>
+            <p class="card-price-price" id="pricePrice"></p>
+            <ul class="card-price-details" id="priceDetailsList">
+            </ul>
+            <a href="#contact" class="check-out-btn">Check Out</a>
+          </div>
+        </template>
+      </div>
+    </section>
+
+
+
+    <!-- COMMENTS SECTION -->
+    <section class=" review" id="review">
+      <h2 class="sections-title container">client's <span>Reviews</span></h2>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper" id="reviewsContainer">
+
+          <template id="templateReviews">
+          <div class=" swiper-slide">
+            <div class="card-review">
+              <header class="card-review-header">
+                <figure class="card-review-header-img">
+                  <img src="" alt="" id="reviewPhoto">
+                </figure>
+                <div class="card-review-header-client">
+                  <h3 id="reviewName"></h3>
+                  <p id="reviewText"></p>
+                </div>
+              </header>
+              <blockquote class="card-review-comment">
+                <p id="reviewComment"></p>
+              </blockquote>
+              </div>
+          </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- CONTACT SECTION -->
+  <section class="sections contact " id="contact">
+    <h2 class="sections-title container"><span>contact</span> us</h2>
+    
+    <form class="contact-form">
+      <div class="contact-section-up">  
+        <div class="contact-section-up-first"> <!--name and email inputs-->
+          <div class="fields">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" >
+          </div>
+          <div class="fields">
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" >
+          </div>
+        </div> <!--name and email inputs close-->
+        <div  class="contact-section-up-second"> <!--number and subject inputs-->
+          <div class="fields">
+            <label for="number">Phone number:</label>
+            <input type="number" id="number" name="number" placeholder="Enter your phone number" >
+          </div>
+          <div class="fields">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="subject" >
+          </div>
+        </div> <!--number and subject inputs-->
+      </div>
+      <div class="fields">
+        <textarea name="message" id="message" placeholder="Your message plaese!" ></textarea>
+      </div>
+      <input type="submit" value="Send message" class="contact-submit">
+    </form>
+  </section>
+
+    <!--FOOTER-->
+    <footer class="footer" >
+      <div class="footer-container">
+        <div class="list-section">
+          <h3>branches</h3>
+          <ul class="list-details">
+            <li><img src="./images/map-pin-blue.svg" alt="map icon"> <span>Mumbai</span> </li>
+            <li><img src="./images/map-pin-blue.svg" alt="map icon"> <span>jogeshwari</span> </li>
+            <li><img src="./images/map-pin-blue.svg" alt="map icon"> <span>goregaon</span> </li>
+            <li><img src="./images/map-pin-blue.svg" alt="map icon"> <span>navi Mumbai</span> </li>
+            <li><img src="./images/map-pin-blue.svg" alt="map icon"> <span>andheri</span> </li>
+          </ul>
+        </div>
+        <div class="list-section">
+          <h3>quick links</h3>
+          <ul class="list-details">
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#">home</a> </li>
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#service">service</a> </li>
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#about">about</a> </li>
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#gallery"> gallery</a> </li>
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#price">price</a> </li>
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#review">review</a> </li>
+            <li><img src="./images/arrow.svg" alt="link icon"> <a href="#contact">contact</a> </li>
+          </ul>
+        </div>
+        <div class="list-section">
+          <h3>contact info</h3>
+          <ul class="list-details">
+            <li><img src="./images/phone.svg" alt="phone icon"> <span>55-55-55-55-55</span> </li>
+            <li><img src="./images/phone.svg" alt="phone icon"> <span>55-55-55-55-55</span> </li>
+            <li><img src="./images/paper-blue.svg" alt="letter icon"> <span>fake_one@fake_one.com</span> </li>
+            <li><img src="./images/paper-blue.svg" alt="letter icon"> <span>fake_two@fake_two.com</span> </li>
+            <li><img src="./images/map-pin-blue.svg" alt="map icon"> <span>Mumbai, india 400104 </span> </li>
+          </ul>
+        </div>
+        <div class="list-section">
+          <h3> follow us</h3>
+          <ul class="list-details">
+            <li><img src="./images/facebook.svg" alt="facebook icon"> <a href="#">facebook</a> </li>
+            <li><img src="./images/twitter.svg" alt="twitter icon"> <a href="#">twiiter</a> </li>
+            <li><img src="./images/linkedin.svg" alt="linkedin icon"> <a href="#">linkedin</a> </li>
+            <li><img src="./images/youtube.svg" alt="youtube icon"> <a href="#"> youtube</a> </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+      
+
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

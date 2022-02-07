@@ -1,0 +1,51 @@
+@use '../utils/variables'as vars;
+@use '../utils/mixins'as mixins;
+
+
+.card-price-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+   gap: 1rem;
+   max-width: 100rem;
+   margin-top: 2rem;
+}
+
+.card-price {
+   padding: 1.5rem 0;
+   text-align: center;
+   background-color: vars.$secondary-color;
+   border-radius: .5rem;
+   transition: all .2s ease-in-out;
+   &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 .3rem .3rem vars.$third-color;
+   }
+   &-title {
+      padding: 1rem;
+      text-transform: capitalize;
+      background-color: vars.$blue-dark;
+   }
+
+   &-price {
+      margin: 2rem 0;
+      font-size: 2.5rem;
+      font-weight: vars.$bold;
+   }
+
+   &-details {
+      display: grid;
+      gap: 1rem;
+      li {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: .2rem;
+         font-weight: vars.$bold;
+         text-transform: capitalize;
+
+         img {
+            width: 2rem;
+         }
+      }
+   }
+}

@@ -1,0 +1,91 @@
+@use '../utils/variables'as vars;
+@use '../utils/mixins'as mixins;
+
+.gallery-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+   gap: 1rem;
+   margin-top: 2rem;
+    max-width: 60rem;
+
+   .gallery-details {
+      position: relative;
+      background-color: vars.$secondary-color;
+      overflow: hidden;
+      border: .7rem solid vars.$secondary-color;
+      border-radius: .3rem;
+
+      .gallery-img {
+         transition: all .3s ease-in-out;
+         height: 12rem;
+      }
+
+      &:hover .gallery-img {
+         transform: scale(1.2);
+         filter: brightness(.6);
+      }
+
+      //gallery-icons and gallery-title class
+      .gallery-title {
+         font-size: 1.5rem;
+         text-align: center;
+         padding: .2rem 0;
+         text-transform: capitalize;
+      }
+
+      .gallery-icons {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 1rem;
+         padding-top: .2rem;
+
+         img {
+            width: 1.5rem;
+            height: 1.5rem;
+
+            &:hover {
+               filter: brightness(.5);
+            }
+
+            &:active {
+               transform: scale(.9);
+            }
+         }
+      }
+
+      .gallery-title,
+      .gallery-icons {
+         position: absolute;
+         z-index: 10;
+         width: 100%;
+         background-color: vars.$secondary-color;
+         transition: all .3s ease-in-out;
+         visibility: hidden;
+         opacity: 0;
+      }
+
+      .gallery-title {
+         top: -3rem;
+      }
+
+      .gallery-icons {
+         bottom: -3rem;
+      }
+
+      // hovers gallery-icons and gallery-title
+      &:hover .gallery-icons,
+      &:hover .gallery-title {
+         visibility: visible;
+         opacity: 1;
+      }
+
+      &:hover .gallery-title {
+         top: 0;
+      }
+
+      &:hover .gallery-icons {
+         bottom: 0;
+      }
+   }
+}

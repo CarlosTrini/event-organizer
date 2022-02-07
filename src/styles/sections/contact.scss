@@ -1,0 +1,66 @@
+@use '../utils/variables'as vars;
+@use '../utils/mixins'as mixins;
+
+.contact-form {
+   max-width: 60rem;
+   padding: 0 1rem;
+   margin: 1rem auto 0;
+
+   .contact-section-up-first,
+   .contact-section-up-second{
+      @include mixins.phone{
+         display: flex;
+         gap: 1rem;
+      }
+   }
+}
+
+
+.fields {
+   @include mixins.phone{
+      flex:1;
+   }
+   
+   label{
+      margin-bottom: .5rem;
+      display: block;
+      text-transform: capitalize;
+      font-weight: vars.$bold;
+   }
+   input, textarea{
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: .5rem;
+      font-size: 1.2rem;
+      color: vars.$white;
+      border: none;
+      border-radius: .5rem .2rem .5rem;
+      background-color: vars.$third-color;
+      appearance: none;
+      &::placeholder{
+         color: vars.$white;
+      }
+   }
+   textarea{
+      resize: none;
+      height: 10rem;
+   }
+}
+
+.contact-submit{
+   display: block;
+   width: fit-content;
+   margin: 0 auto;
+   padding: .5rem 1.5rem;
+   color: vars.$white;
+   font-weight: vars.$bold;
+   border-radius: .3rem;
+   border: .1rem solid vars.$white;
+   background-color: transparent;
+   transition: all .3s ease-in-out;
+   &:hover{
+      width: 30%;
+      background:vars.$third-color ;
+   }
+}
+
